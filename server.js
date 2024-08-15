@@ -86,5 +86,3 @@ app.post('/analyze', upload.single('housePhoto'), async (req, res) => {
     res.status(500).json({ error: 'An error occurred during analysis. Check server logs for details.' });
   }
 });
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
