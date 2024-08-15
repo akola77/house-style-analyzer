@@ -8,6 +8,7 @@ require('dotenv').config();
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
+const apiKey = process.env.OPENAI_API_KEY;
 
 // CORS configuration
 const corsOptions = {
